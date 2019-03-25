@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang = "fr">
+    <head>
+        <meta charset="utf-8">   <!-- type d'encodage -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- uniquement mobile utilise tout l'espace sans zoom -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- uniquement pour Edge si utlise la derniere version -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- CDN bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- CDN jQuery -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> <!-- CDN Bootstrap -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">  <!-- bibliotheque d'icones -->
+        <link rel="stylesheet" type="text/css" href="CSS/printing3d_css.css">
+        <title>Printing3D</title>
+        <link rel="icon" href="images/favicon-16x16.png" />
+        <meta name="description" content="vous trouverez tout le matériel nécessaire pour l'impression 3D" />
+    </head>
+    
+    <body>
+        <div class="container-fluid backRosy">
+            <!--  START HEADER COPY ALL PAGES  -->
+            <header class="row p-2 backSlateGray">
+                <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                    <img class="img-fluid" src="images/logo_V3.jpg" alt="logo société Printing3D">
+                </div>
+                <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                    <p></p>
+                    <span class="h2">Printing 3D</span>
+                    <p>Le spécialiste de la 3D</p>
+                </div>
+                
+                <!-- NAVBAR WITH ANOTHER MENU WHEN XS  -->
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 row justify-content-lg-end"> <!-- a gauche quand lg -->
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>   
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <li class="active"><button id="btnAccueil" class="btn btn-primary">ACCUEIL</button></li>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 m-1">
+                                    <li><a class="pl-4" id="idAbtn" href="produits.html">PRODUITS</a></li>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" id="menu1" data-toggle="dropdown">Espace Client</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="mentionsLegales.html">Mentions Légales</a>
+                                        <a class="dropdown-item" href="formulaireContact.html">Formulaire de contact</a>
+                                    </div>
+                                </div>     
+                            </ul>
+                        </div>
+                    </nav> <!-- END NAVBAR  -->       
+                </div>
+            </header>
+            <!--  END HEADER COPY ALL PAGES    -->
+            
+            <!-- START MAIN PAGE -->
+            <main>
+                <section class="row">
+                    <div class="col-12 p-2 text-center backRosy">
+                        <h1>Bienvenue sur le site de Printing3D, le Spécialiste de la 3D</h1>
+                        <p><span>Printing3D</span> vous offre un large choix d'imprimante 3D et tout le matériel nécessaire a son fonctionnement</p>
+                        <p>Notre gamme va du Professionnel au particulier. Les filaments sont d'une très bonne qualité et testés dans nos services</p>
+                        <p>Nous pouvons vous proposer une large gamme de formation 3D ou PAO ainsi que la modélisation et impression de vos modèles</p>
+                        <p>Notre service dépannage à domicile ou en atelier est à votre service pour tous problèmes techiniques</p>
+                    </div>
+                </section>
+                <section class="row backRosy">
+                    <div class="col-12">
+                        <img id="img_photo1" class="img-fluid w-100" src="images/3d-printingV2.jpg" alt="image de la société">
+                    </div>
+                </section>
+                
+                <aside class="row">
+                    <div class="col-12 p-2">
+                        <h2>Nos Services</h2>
+                    </div>
+                </aside>
+                
+                <!-- START USE THE CARDS -->
+                <div class="row">
+                    <section class="card-group p-5 backRosy col-12 offset-lg-1 col-lg-10">
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <img src="images/printer3d_1.jpg" alt="Imprimante 3D" class="card-img-top img-fluid h-25 d-none d-sm-block"/>
+                            <div class="card-body">
+                                <h2 class="h3 card-title">Vente de matériels 3D</h2><br>
+                                <p class="card-text text-justify">Nous avons une large gamme de produits 3D qui répondront à toutes vos exigences.<br>Imprimantes 3D, Scanners 3D et une large gamme de filaments satisfaisant toutes les types d'impression.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div> <!-- end first card -->
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <img src="images/training.jpg" alt="image basique de formation" class="card-img-top img-fluid h-25 d-none d-sm-block"/>
+                            <div class="card-body">
+                                <h2 class="h3 card-title">Formation 3D / PAO</h2><br>
+                                <p class="card-text text-justify">Nous pouvons organiser des séances de formations pour l'utilisation des divers matériels achetés. N'hésitez pas à nous contacter pour les tarifs et dates de formations.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div> <!-- end second card -->
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <img src="images/help.jpg" alt="image basique de dépannage" class="card-img-top img-fluid h-25 d-none d-sm-block"/>
+                            <div class="card-body">
+                                <h2 class="h3 card-title">Dépannage</h2><br>
+                                <p class="card-text text-justify">Nos techniciens sont à votre disposition pour toutes interventions sur site ou en atelier.<br>un forfait tout compris vous évitera des surprises.<br>nhésitez pas à nous contacter pour plus d'informations.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div> <!-- end third card -->
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <img src="images/ligneCode.jpg" alt="image de code" class="card-img-top img-fluid h-25 d-none d-sm-block"/>
+                            <div class="card-body">
+                                <h2 class="h3 card-title">Modélisation-impression 3D</h2>
+                                <p class="card-text text-justify">Nous avons un service de modélisation et d'impression 3D. Revenez vers nous pour tous devis sur vos créations. Nos ateliers techiniques répondront à toutes vos demandes.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div> <!-- end fourth card -->
+                    </section>
+                </div>
+                <!-- END USR CARDS -->
+                                             
+                <!-- SECTION OUR PRODUCTS  -->
+                <aside class="row">
+                    <div class="col-12 p-2">
+                        <h2>Nos Produits</h2>
+                    </div>
+                </aside>
+                
+                <section class="row"> <!-- START CAROUSEL IMAGE -->
+                    <article class="col-12 col-sm-6 offset-lg-1 col-lg-6 p-2">
+                        <ul class="list-group">
+                            <li class="list-group-item backSlateGray">Imprimantes 3D professionnelles</li>
+                            <li class="list-group-item backDarkGrey colorWhite">Imprimantes 3D Amateurs DIY</li>
+                            <li class="list-group-item backSlateGray">Filaments haute qualité</li>
+                            <li class="list-group-item backDarkGrey colorWhite">Scanners 3D</li>
+                        </ul>
+                    </article>
+                    <aside class="col-12 col-md-4 col-lg-3 p-3 offset-lg-1">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">  <!--indicateur de position -->
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1" class="active"></li>
+                            </ol>
+
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <img alt="Image d'une impriamnte 3D" src="images/imprimante3D_V2.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item"> 
+                                    <img alt="Image d'une impriamnte 3D" src="images/imprimante3D_V1.jpg" class="img-fluid">
+                                </div>
+                                <div class="carousel-item"> 
+                                    <img alt="Image d'un scanner 3D" src="images/scanner3D_V1.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </aside>  
+                </section> <!-- END CAROUSEL IMAGE -->                       
+            </main>
+            
+            <!-- START FOOTER -->     
+            <footer class="row backTurquoise">
+                <div class="col-12 col-lg-6">
+                    <br>
+                    <span><i class="fas fa-desktop"></i> copyright &copy; 2019 - Stéphane HENRY</span><br>
+                    <span>www.printing3D.com</span>
+                </div>
+                <div class="col-12 offset-lg-2 col-lg-4">
+                    <h3 class="h4">Informations utiles</h3>
+                    <p>Nous contacter</p>
+                    <p>S A V  <i class="fas fa-phone"></i> 0820 399 399 Numéro gratuit</p>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+                
+        </div>  <!-- END CONTAINER_FLUID -->
+            
+        <!-- Script when the page is full loaded  -->
+        <script type="text/javascript" src="JS/index.js"></script>
+ 
+    </body>
+</html>

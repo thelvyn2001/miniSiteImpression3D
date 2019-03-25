@@ -1,0 +1,80 @@
+/* GENERAL */
+
+button {
+    width: 150px;
+}
+
+h1, h2, h3, h4 {
+    color: #36363F;
+}
+button {
+    width: 150px;
+}
+#idAbtn {
+    color: white;
+}
+
+/* font */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("Roboto-Medium.ttf");
+}
+h1 {
+    font-family: 'Roboto-Medium', Arial, serif;
+}
+
+* {
+    font-family: 'Roboto-Light', Arial, serif;
+}
+
+
+/* BackGround Colors */
+.backTurquoise {
+    background-color: #31ACDF;
+}
+.backRosy {
+    /*background-color: #C9A99D;*/
+    /*background-color: #c9c0bc;*/
+    background-color: #E3D1CF;
+}
+.backDarkGrey {
+    background-color: #36363F;
+}
+.backLigthBlue {
+    background-color: #E4E2ED;
+}
+.backSlateGray {
+    background-color: #888496;
+}
+
+/*
+/* color color  */
+.colorWhite {
+    color: white;
+}
+
+/* File mentions légales  */
+#list_mentions {
+    width: 300px;
+}
+
+/* File indew.html */
+.card-img-top {
+    width: 100%;
+    height: 20vh;
+}
+
+/* File Formulaire */
+.form-control {
+    width: 60%;
+}
+
+/* File Products */
+#LblClignotant {
+    color: #25305D;
+    font-family: 'Roboto-Medium', Arial, serif;
+}

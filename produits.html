@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang = "fr">
+    <head>
+        <meta charset="utf-8">   <!-- type d'encodage -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- uniquement mobile utilise tout l'espace sans zoom -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- uniquement pour Edge si utlise la derniere version -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- CDN bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- CDN jQuery -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> <!-- CDN Bootstrap -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">  <!-- bibliotheque d'icones -->
+        <link rel="stylesheet" type="text/css" href="CSS/printing3d_css.css">
+        <title>Printing3D</title>
+        <link rel="icon" href="images/favicon-16x16.png" />
+        <meta name="description" content="vous trouverez tout le matériel nécessaire pour l'impression 3D" />
+    </head>
+    
+    <body>
+        <div class="container-fluid backRosy">
+            <!--  START HEADER COPY ALL PAGES  -->
+            <header class="row p-2 backSlateGray">
+                <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                    <img class="img-fluid" src="images/logo_V3.jpg" alt="logo société Printing3D">
+                </div>
+                <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                    <p></p>
+                    <span class="h2">Printing 3D</span>
+                    <p>Le spécialiste de la 3D</p>
+                </div>
+                
+                <!-- NAVBAR WITH ANOTHER MENU WHEN XS  -->
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 row justify-content-lg-end"> <!-- a gauche quand lg -->
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>   
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <li class="active"><button id="btnAccueil" class="btn btn-primary">ACCUEIL</button></li>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 m-1">
+                                    <li><a class="pl-4" id="idAbtn" href="produits.html">PRODUITS</a></li>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" id="menu1" data-toggle="dropdown">Divers</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="mentionsLegales.html">Mentions Légales</a>
+                                        <a class="dropdown-item" href="formulaireContact.html">Formulaire de contact</a>
+                                    </div>
+                                </div>     
+                            </ul>
+                        </div>
+                    </nav> <!-- END NAVBAR  -->       
+                </div>
+            </header>
+            <!--  END HEADER COPY ALL PAGES    -->
+            
+            <h1>Les produits pour l'impression 3D</h1>
+            <label id="LblClignotant">CLIQUEZ SUR L'IMAGE POUR AVOIR LE DETAIL DU PRODUIT</label>
+
+            <!--------------------------------------------------->
+            <!-- FIRST LINE OF PRODUCTS  PRINTERS  3D          -->
+            <!-- ------------------------------------------------>   
+            <section class="row m-5">
+                <!-- First product   -->
+                <article class="col-12 col-lg-4">
+                    <h2 class="h3">Imprimantes 3D FDM</h2>
+                    <a href="#" data-toggle="modal" data-target="#image-imprimante1">
+                        <img class="img-responsive img-thumbnail" src="images/imprimante3D_V1.jpg" alt="Imprimantes 3D FDM" id="linkImage1">
+                    </a>
+                    <div class="modal fade" id="image-imprimante1" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">   
+                                    <h4 class="modal-title" id="modalTitle1">Imprimantes 3D FDM</h4>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                <div class="modal-body" id="modalBody1">
+                                   Comment fonctionne l'imprimante 3D à dépôt de matière fondue (FDM) ? Le principe est simple : un filament est fondu par la buse puis déposé couche par couche par l'imprimante jusqu'à former un objet en trois dimensions. L'extrusion est le fait de faire sortir le filament de l'imprimante par la buse d'un diamètre inférieur. Besoin de créer vos pièces en 3D sans difficulté ? De créer des prototypes fonctionnels rapidement ? L'impression 3D FDM est la solution à tous les besoins en prototypage via le filament 3D disponible dans de nombreuses matières sur notre boutique en ligne.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- second product   -->
+                <article class="col-12 col-lg-4">
+                    <h2 class="h3">Imprimantes 3D SLA</h2>
+                    <a href="#" data-toggle="modal" data-target="#image-imprimante2">
+                        <img class="img-responsive img-thumbnail" src="images/imprimante3D_V2.jpg" alt="Imprimantes 3DS SLA" id="linkImage2">
+                    </a>
+                    <div class="modal fade" id="image-imprimante2" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">   
+                                    <h4 class="modal-title" id="modalTitle2">Imprimantes 3D SLA</h4>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                <div class="modal-body" id="modalBody2">
+                                    La stéréolithographie est la technique d'impression 3D la plus utilisée dans le milieu professionnel. Ce procédé révolutionnaire est composé d’un bac de résine liquide photosensible qui est photo polymérisée par un faisceau laser. Les imprimantes 3D SLA fonctionnent grâce à la solidification (photo polymérisation) de résine via un laser.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-lg-4 border">
+                    <h3>Nos machines d'impression 3D</h3>
+                    <p>Un filament est fondu par la buse puis déposé couche par couche par l'imprimante jusqu'à former un objet en trois dimensions. L'extrusion est le fait de faire sortir le filament de l'imprimante par la buse d'un diamètre inférieur. Besoin de créer vos pièces en 3D sans difficulté ? De créer des prototypes fonctionnels rapidement ? L'impression 3D FDM est la solution à tous les besoins en prototypage via le filament 3D disponible dans de nombreuses matières.</p>           
+                </article>    
+            </section>
+            
+            
+            
+            <!--------------------------------------------------->
+            <!--     SECOND LINE OF PRODUCTS  FILAMENTS        -->
+            <!-- ------------------------------------------------>   
+            <section class="row m-5">
+                <!-- First product   -->                
+                <article class="col-12 col-lg-4">
+                   <h2 class="h3">Filaments PLA</h2>
+                    <a href="#" data-toggle="modal" data-target="#image-filament1">
+                        <img class="img-responsive img-thumbnail" src="images/filament_V1.jpg" alt="Filaments PLA impriamnte 3D" id="linkImage1">
+                    </a>
+                    <div class="modal fade" id="image-filament1" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">   
+                                    <h4 class="modal-title" id="modalTitle1">Filaments PLA</h4>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                <div class="modal-body" id="modalBody1">
+                                   Le filament 3D PLA (Polylactic Acid) est le plastique le plus couramment utilisé en impression 3D. Ce biomatériau à base d’amidon de maïs est idéal pour une majorité des applications de l’impression 3D. L’intérêt de ce matériau PLA aux caractéristiques générales intéressantes est sa simplicité d’utilisation. Ce thermoplastique offre d’excellents comportements lors d’une impression 3D, il s’imprime à des températures relativement faibles, ne pose pas de difficultés d’adhérence (pas de warping), permet de bonnes performances en bridging (capacité de refroidissement rapide en zone de porte-à-faux) et offre une excellente liaison intercouches.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </article>
+            
+                <!-- second product   -->
+                <article class="col-12 col-lg-4">
+                    <h2 class="h3">Filaments ABS</h2>
+                    <a href="#" data-toggle="modal" data-target="#image-filament2">
+                        <img class="img-responsive img-thumbnail" src="images/filament_V2.jpg" alt="Filaments ABS impriamnte 3D" id="linkImage2">
+                    </a>
+                    <div class="modal fade" id="image-filament2" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">   
+                                    <h4 class="modal-title" id="modalTitle2">Filaments ABS</h4>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                <div class="modal-body" id="modalBody2">
+                                    Le filament 3D ABS (Acrylonitrile Butadiène Styrène) est un thermoplastique durable et résistant aux chocs. On le retrouve partout dans la vie courante (dans l'électroménager par exemple et l'industrie en général). L’exemple le plus concret d’utilisation de l’ABS est le fameux Lego
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <article class="col-12 col-lg-4 border">
+                    <h3>Nos Divers filaments</h3>
+                    <p>Tous les filaments 3D pour imprimante 3D sont ici. Les filaments sont classés en catégories par matière et usage pour faciliter le choix. Le filament 3D est le consommable pour imprimante, sous forme de fil et disponible à l'achat en bobine de différentes couleurs et diamètres selon l'imprimante 3D.</p>           
+                </article>
+            </section>
+                
+                            
+            
+            <!--------------------------------------------------->
+            <!--     3EME LIGNE DE PRODUIT  SCANNERS 3D        -->
+            <!-- ------------------------------------------------> 
+             <section class="row m-5">
+                <!-- First product   -->
+                <article class="col-12 col-lg-4">
+                    <h2 class="h3">Scanners 3D professionnels</h2>
+                    <a href="#" data-toggle="modal" data-target="#image-scanner1">
+                        <img class="img-responsive img-thumbnail" src="images/scanner3D_V3.jpg" alt="Scanner 3D Preofessionnerl" id="linkImage1">
+                    </a>
+                    <div class="modal fade" id="image-scanner1" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">   
+                                    <h4 class="modal-title" id="modalTitle1">Scanners professionnels</h4>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                <div class="modal-body" id="modalBody1">
+                                   Un scanner 3D vous permet d'obtenir un modèle 3D d'un objet en vue de sa duplication, sa modification, ou son impression 3D. Scannez en 3D au meilleur prix avec les scanners 3D sélectionnés. Comparez les scanners 3D parmi un grand choix de modèles. Pour numériser et imprimer avec un scanner 3D, pensez à lire les avis et les tests scanners 3D. Le meilleur des scanners 3D accessible à moins de 500 euros avec une précision fiable pour des fichiers imprimables en 3D après avoir scanné.
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            
+                <!-- second product   -->
+                <article class="col-12 col-lg-4">
+                    <h2 class="h3">Scanners 3D pour débutants</h2>
+                    <a href="#" data-toggle="modal" data-target="#image-scanner2">
+                        <img class="img-responsive img-thumbnail" src="images/scanner3D_V1.jpg" alt="Scanners 3D pour débutants" id="linkImage2">
+                    </a>
+                    <div class="modal fade" id="image-scanner2" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">   
+                                    <h4 class="modal-title" id="modalTitle2">Scanners Débutant</h4>
+                                    <button type="button" class="close" data-dismiss="modal">x</button>
+                                </div>
+                                <div class="modal-body" id="modalBody2">
+                                    Un scanner 3D vous permet d'obtenir un modèle 3D d'un objet en vue de sa duplication, sa modification, ou son impression 3D. Scannez en 3D au meilleur prix avec les scanners 3D sélectionnés. Comparez les scanners 3D parmi un grand choix de modèles. Pour numériser et imprimer avec un scanner 3D, pensez à lire les avis et les tests scanners 3D. Le meilleur des scanners 3D accessible à moins de 500 euros avec une précision fiable pour des fichiers imprimables en 3D après avoir scanné.
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-lg-4 border">
+                    <h3>Nos Scanners 3D</h3>
+                    <p>Un scanner 3D vous permet d'obtenir un modèle 3D d'un objet en vue de sa duplication, sa modification, ou son impression 3D. Scannez en 3D au meilleur prix avec les scanners 3D sélectionnés. Comparez les scanners 3D parmi un grand choix de modèles. Pour numériser et imprimer avec un scanner 3D, pensez à lire les avis et les tests scanners 3D. Le meilleur des scanners 3D accessible à moins de 500 euros avec une précision fiable pour des fichiers imprimables en 3D après avoir scanné.</p>           
+                </article>    
+            </section>
+            
+             <!-- START FOOTER -->     
+            <footer class="row backTurquoise">
+                <div class="col-12 col-lg-6">
+                    <br>
+                    <span><i class="fas fa-desktop"></i> copyright &copy; 2019 - Stéphane HENRY</span><br>
+                    <span>www.printing3D.com</span>
+                </div>
+                <div class="col-12 offset-lg-2 col-lg-4">
+                    <h3 class="h4">Informations utiles</h3>
+                    <p>Nous contacter</p>
+                    <p>S A V  <i class="fas fa-phone"></i> 0820 399 399 Numéro gratuit</p>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        
+            
+
+       
+        </div>
+    <!-- Script à la fin une fois que le formualaire est chargé  -->
+    <script type="text/javascript" src="JS/index.js"></script>
+    <script type="text/javascript" src="JS/produits.js"></script>    
+
+    </body>
+</html>

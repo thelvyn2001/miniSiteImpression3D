@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang = "fr">
+    <head>
+        <meta charset="utf-8">   <!-- type d'encodage -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- uniquement mobile utilise tout l'espace sans zoom -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- uniquement pour Edge si utlise la derniere version -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- CDN bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- CDN jQuery -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> <!-- CDN Bootstrap -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">  <!-- bibliotheque d'icones -->
+        <link rel="stylesheet" type="text/css" href="CSS/printing3d_css.css">
+        <title>Printing3D</title>
+        <link rel="icon" href="images/favicon-16x16.png" />
+        <meta name="description" content="vous trouverez tout le matériel nécessaire pour l'impression 3D" />
+    </head>
+    
+    <body>
+        <div class="container-fluid backRosy">
+            <!--  START HEADER COPY ALL PAGES  -->
+            <header class="row p-2 backSlateGray">
+                <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                    <img class="img-fluid" src="images/logo_V3.jpg" alt="logo société Printing3D">
+                </div>
+                <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                    <p></p>
+                    <span class="h2">Printing 3D</span>
+                    <p>Le spécialiste de la 3D</p>
+                </div>
+                
+                <!-- NAVBAR WITH ANOTHER MENU WHEN XS  -->
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 row justify-content-lg-end"> <!-- a gauche quand lg -->
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>   
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <li class="active"><button id="btnAccueil" class="btn btn-primary">ACCUEIL</button></li>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 m-1">
+                                    <li><a class="pl-4" id="idAbtn" href="produits.html">PRODUITS</a></li>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" id="menu1" data-toggle="dropdown">Divers</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="mentionsLegales.html">Mentions Légales</a>
+                                        <a class="dropdown-item" href="formulaireContact.html">Formulaire de contact</a>
+                                    </div>
+                                </div>     
+                            </ul>
+                        </div>
+                    </nav> <!-- END NAVBAR  -->       
+                </div>
+            </header>
+            <!--  END HEADER COPY ALL PAGES    -->
+            <!-- STRAT CONTACT FORM -->
+            <main class="row pt-5 pb-5 backRosy">
+                <aside class="col-12 col-lg-5 vcard">
+                    <h1>Contactez nous pour toute information sur nos produits 3D et services</h1>
+                    <p class="h3">Printing3D</p>
+                    <p class="h3"><i class="fas fa-address-card"></i> 22 rue Saint Hubert</p> 
+                    <p class="h3">75012 Paris</p>
+                    <p class="h3">Jean-Pascal REMI</p>
+                    <p class="h3"><i class="fas fa-mobile-alt"></i> 01 25 12 45 85</p> 
+                    <adress class="h3"><i class="fas fa-at"></i> jean-pascal.remi@gmail.com</adress>
+                    <hr>
+                    <img src="images/Formulaire_V2.jpg" alt="image 3d cubes bleus et blancs">
+                </aside>
+                <aside class="col-12 offset-lg-2 col-lg-5">   
+                    <form id="formContact"  method="GET" action="#">
+                        <h2 class="h3">Formulaire de contact</h2>
+                        <div id="divFirstName" class ="form-group">
+                            <label for="idFirstName">Prénom</label>
+                            <input class="form-control" type="text" id="idFirstName" placeholder="Prénom" name="firstName">
+                        </div>
+                        <div id="divLastName" class="form-group">
+                            <label for="idLastName"><i class="fas fa-male"></i> Nom</label>
+                            <input class="form-control" type="text" id="idLastName" placeholder="Nom" name="lastName">
+                        </div>
+                        <div id="divPhone" class="form-group">
+                            <label for="idTel">
+                            <i class="fas fa-mobile-alt"></i> Téléphone</label>
+                            <input class="form-control" type="text" id="idPhone" placeholder="Téléphone" name="phone">
+                        </div>
+                        <div id="divEmail" class="form-group">
+                            <label for="idEmail"><i class="fas fa-at"></i>Adresse Mail</label>
+                            <input class="form-control" type="text" id="idEmail" placeholder="Adresse Mail" name="mail">
+                        </div>
+                        <div id="divComment" class="form-group">
+                            <label for="idComment"><i class="fas fa-braille"></i> Commentaire</label>
+                            <textarea class="form-control" id="idComment" name="comment" rows="4"></textarea>
+                        </div>
+                        <label>Voulez vous recevoir un mail de confirmation ? <input type="checkbox" name="mail" id="idMail" checked></label><br>
+                        <button class="btn btn-primary btn-sm" id="btnSubmit">ENVOYER</button>
+                    </form>
+                </aside>
+            </main> <!-- END CONTACT FORM -->
+        
+            <!-- START FOOTER -->     
+            <footer class="row backTurquoise">
+                <div class="col-12 col-lg-6">
+                    <br>
+                    <span><i class="fas fa-desktop"></i> copyright &copy; 2019 - Stéphane HENRY</span><br>
+                    <span>www.printing3D.com</span>
+                </div>
+                <div class="col-12 offset-lg-2 col-lg-4">
+                    <h3 class="h4">Informations utiles</h3>
+                    <p>Nous contacter</p>
+                    <p>S A V  <i class="fas fa-phone"></i> 0820 399 399 Numéro gratuit</p>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        
+        <!-- Script à la fin une fois que le formualaire est chargé  -->
+        <script type="text/javascript" src="JS/formulaireContact.js"></script>
+        <script type="text/javascript" src="JS/index.js"></script>
+        </div>   
+    </body>
+</html>
